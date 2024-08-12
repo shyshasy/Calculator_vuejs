@@ -106,7 +106,7 @@ const calculate = () => {
 
 const formattedResult = computed(() => {
   return typeof result.value === 'number'
-    ? result.value.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })
+    ? result.value.toLocaleString('fr-FR') /* Affichage du nombre sans symbole monétaire */
     : result.value;
 });
 </script>
